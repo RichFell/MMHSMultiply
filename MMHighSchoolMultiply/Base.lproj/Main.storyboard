@@ -33,19 +33,16 @@
                                     <rect key="frame" x="151" y="61" width="18" height="21"/>
                                 </variation>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mrq-nt-DsA">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" title="Button">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gid-uD-HEi">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="137" y="150" width="46" height="30"/>
+                                    <rect key="frame" x="216" y="56" width="55" height="21"/>
                                 </variation>
-                                <connections>
-                                    <action selector="onButtonPressedMultiply:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="90Z-Sy-QNH"/>
-                                </connections>
-                            </button>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="3" minValue="0.0" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="Zk2-FY-eqg">
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="10" minValue="0.0" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="Zk2-FY-eqg">
                                 <rect key="frame" x="0.0" y="-15" width="118" height="31"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="101" y="225" width="118" height="31"/>
@@ -63,35 +60,38 @@
                                     <rect key="frame" x="131" y="111" width="58" height="21"/>
                                 </variation>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gid-uD-HEi">
-                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mrq-nt-DsA">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Multiply">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="216" y="56" width="55" height="21"/>
+                                    <rect key="frame" x="133" y="152" width="54" height="30"/>
                                 </variation>
-                            </label>
+                                <connections>
+                                    <action selector="onButtonPressedMultiply:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="90Z-Sy-QNH"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="zxO-g6-qNB"/>
                                 <exclude reference="L8W-ol-8gX"/>
-                                <exclude reference="mrq-nt-DsA"/>
+                                <exclude reference="gid-uD-HEi"/>
                                 <exclude reference="Zk2-FY-eqg"/>
                                 <exclude reference="5O0-G7-hQz"/>
-                                <exclude reference="gid-uD-HEi"/>
+                                <exclude reference="mrq-nt-DsA"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="zxO-g6-qNB"/>
                                 <include reference="L8W-ol-8gX"/>
-                                <include reference="mrq-nt-DsA"/>
+                                <include reference="gid-uD-HEi"/>
                                 <include reference="Zk2-FY-eqg"/>
                                 <include reference="5O0-G7-hQz"/>
-                                <include reference="gid-uD-HEi"/>
+                                <include reference="mrq-nt-DsA"/>
                             </mask>
                         </variation>
                     </view>
