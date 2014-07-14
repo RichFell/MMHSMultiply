@@ -2,8 +2,8 @@
 //  ViewController.swift
 //  MMHighSchoolMultiply
 //
-//  Created by Richard Fellure on 7/14/14.
-//  Copyright (c) 2014 Rich. All rights reserved.
+//  Created by Mobile Makers on 7/14/14.
+//  Copyright (c) 2014 Mobile Makers. All rights reserved.
 //
 
 import UIKit
@@ -39,7 +39,6 @@ class ViewController: UIViewController {
         if answer % 3.0 == 0
         {
             view.backgroundColor = UIColor.blueColor()
-            println("It's evaluating")
         }
     }
     @IBAction func onSlideChangeMultiplyLabel(sender: AnyObject)
